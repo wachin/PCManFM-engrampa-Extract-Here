@@ -51,7 +51,9 @@ After installation:
   - **Extract Here**
   - **Extract to Folder**
 
-Both use **Engrampa**, respecting your system language and showing appropriate icons if available.
+Both use **Engrampa**, respecting your system language and showing appropriate icons if available:
+
+![20250505-0004 extraer aquí con engrampa en PCManFM](vx_images/144387747332686.png)
 
 ---
 
