@@ -8,6 +8,53 @@ This method adds two new contextual actions:
 
 The second one creates a new folder named after the archive file before extracting, avoiding clutter in your current directory.
 
+
+---
+
+# In Debian, the non-free repository is not enabled by default – enable it
+
+`unrar-free` has limitations with certain `.rar` files, especially modern ones. The `unrar` package (from non-free repositories) offers better support. If you don't have the `non-free` repository enabled, edit your `sources.list`:
+
+## Using nano to edit sources.list
+Enter this command in the terminal:
+
+```bash
+sudo nano /etc/apt/sources.list
+```
+
+Make sure you have something like this:
+
+```bash
+deb http://deb.debian.org/debian/ bookworm main contrib non-free
+```
+
+If not, as shown in the image below:
+
+![](https://blogger.googleusercontent.com/img/a/AVvXsEhiYN6HExdTofvjfC9l1rljSwiotHZXmW5g0JH_NZ2vVeQgXUhAJksWnmoDlYhGN4j3C-EzVudsMaSyTp0WME02rWbJxlvDjmQbM7vNP396w6SdUSoiaJLkgeSm_Cq0CUq5tSkqO15L26dXGFKmPv1EuTKXcb04BYPHrfEb4Dphwo9TxrUPNzfQs-oXLeo=s16000)
+
+Add it like this:
+
+![](https://blogger.googleusercontent.com/img/a/AVvXsEhUYAg8H_c9RmzknvMWAJOJs8HA4hPpFe4Bcz8R5PtQkYNwqoldrORClc_Xe4D7E_voXZ02KEKEi5zslsx8x2Y2DZIgfmK61kgh3Khaz7jb8RY7wczap_JN7AfsMlVQxnT6tYvMrpM4cEqUudoG0BZ8tbQeiCWjDF-dof8zgkP3VtfMgcgiOz8Ck2K6kAQ=s16000)
+
+Save and close the file, then refresh the repositories.
+
+If you don't know how to use nano, see the following guide:
+
+**How to use nano in the Linux terminal to edit text files**  
+[https://facilitarelsoftwarelibre.blogspot.com/2024/08/como-usar-nano-en-linux.html](https://facilitarelsoftwarelibre.blogspot.com/2024/08/como-usar-nano-en-linux.html)
+
+## Using Gedit to edit sources.list
+Alternatively, if you prefer, you can use Gedit, which usually allows these operations from the terminal. Just replace the command with:
+
+```bash
+sudo gedit /etc/apt/sources.list
+```
+
+You can also try other text editors, although some — like Kate — often do not allow such actions.
+
+--- 
+
+
 ---
 
 ## ✅ Install Required Tools
@@ -16,7 +63,7 @@ The second one creates a new folder named after the archive file before extracti
 
 ```bash
 sudo apt update
-sudo apt install unzip xz-utils p7zip-full engrampa pcmanfm-qt
+sudo apt install unzip unrar xz-utils p7zip-full engrampa pcmanfm-qt
 ```
 
 | Package        | Purpose |
