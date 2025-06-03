@@ -6,7 +6,9 @@ This method adds two new contextual actions:
 - **Extract Here**
 - **Extract to Folder**
 
-The second one creates a new folder named after the archive file before extracting, avoiding clutter in your current directory.
+The second one creates a new folder named after the archive file before extracting, avoiding clutter in your current directory
+
+![](https://blogger.googleusercontent.com/img/a/AVvXsEgvLxgBpzlDXsRpKw9NN8W2BzEDH5CX2PaF696JNpIMa08b5HImELEkDFKuhrM9-nceQh4ap8lP7Zd5jDXI9jD0yArd9KB3J783XPcIpksCxvlJ6Lmm_rH5xQesEtNnvp2ieT5gqs9zDL0Zb6EL1f1uZz6yFz8DXp3mahS8lLRKI05zqBouY2jLOgH_07E=s16000)
 
 
 ---
